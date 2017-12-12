@@ -1,0 +1,90 @@
+$yellow: rgb(255, 192, 0);
+@import "_fonts";
+@import "_header";
+@import "_footer";
+
+.section2 {
+  background: url("../img/thnx-bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  @media (min-width: 992px) {
+    max-height: 670px;
+    padding-bottom: 120px;
+  }
+}
+
+.section2-title {
+  font-family: "RobotoSlabRegular";
+  font-size: 22px;
+  color: white;
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 30px;
+
+  span {
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid $yellow;
+  }
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-top: 50px;
+    font-size: 28px;
+
+    .lg {
+      display: none;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 280px;
+    font-size: 36px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 40px;
+
+    .lg {
+      display: inline-block;
+    }
+  }
+}
+
+.section2-address {
+  font-family: "OpenSansRegular";
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+.catalog {
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  background-color: $yellow;
+  font-family: "RobotoSlabRegular";
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  max-width: 200px;
+  margin: 10px auto;
+  text-decoration: none;
+  color: black;
+  @media (min-width: 768px) {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 40px;
+  }
+
+  &:hover {
+    background-color: #000;
+    border: 1px solid $yellow;
+    color: $yellow;
+  }
+}

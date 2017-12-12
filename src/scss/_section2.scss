@@ -1,0 +1,174 @@
+.section2 {
+  background: url("../img/section2.jpg") 0 0px no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  @media (min-width: 992px){
+    max-height: 670px;
+    padding-bottom: 100px;
+  }
+}
+
+.section2-title {
+  font-family: "RobotoSlabRegular";
+  font-size: 22px;
+  color: white;
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 30px;
+  span {
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 2px solid $yellow;
+  }
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-top: 50px;
+    font-size: 28px;
+    .lg {
+      display: none;
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 220px;
+    font-size: 36px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 40px;
+
+    .lg {
+      display: inline-block;
+    }
+  }
+}
+
+.section2-address {
+  font-family: "OpenSansRegular";
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+.consultation {
+  background-color: $yellow;
+  padding: 10px;
+  max-width: 340px;
+  margin: 0 auto ;
+  @media (min-width: 768px) {
+    margin-top: 40px;
+
+    max-width: none;
+  }
+  @media (min-width: 992px) {
+    margin-top: 138px;
+
+  }
+  @media (min-width: 1200px) {
+    margin-top: 138px;
+  }
+}
+
+.consultation-title {
+  text-align: center;
+  font-weight: bold;
+  font-family: "RobotoSlabRegular";
+  font-size: 18px;
+  background-color: #ffcc31;
+  padding-bottom: 10px;
+
+  &:before {
+    content: "";
+    display: block;
+    height: 35px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 28px;
+  }
+}
+
+.form {
+  padding: 0 10%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  // display: block;
+  // margin: 0 auto;
+  font-family: "OpenSansRegular";
+  width: 80%;
+  margin-top: 10px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &::placeholder {
+    font-family: "OpenSansRegular";
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 35px;
+  }
+}
+
+.form-button {
+  border-radius: 4px;
+  background-color: $yellow;
+  font-family: "RobotoSlabRegular";
+  font-weight: bold;
+  border: 1px solid transparent;
+  font-size: 16px;
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+  @media (min-width: 768px) {
+    padding: 16px;
+    margin-top: 20px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 40px;
+  }
+  &:hover{
+    background-color: #000;
+    border:1px solid $yellow;
+    color:$yellow;
+  }
+}
+
+.bonus {
+  display: inline-block;
+  width: 84%;
+  margin: 10px auto;
+  text-align: center;
+  font-family: "OpenSansRegular";
+  font-weight: bold;
+  @media (min-width: 768px) {
+    margin: 20px auto;
+  }
+  @media (min-width: 992px) {
+    margin: 30px auto;
+  }
+}

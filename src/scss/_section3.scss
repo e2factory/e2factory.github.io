@@ -1,0 +1,86 @@
+.section3 {
+  background: url("../img/section3.jpg") 0 0 no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-bottom: 30px;
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+  @media (min-width: 992px) {
+    max-height: 670px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 140px;
+  }
+}
+
+.section3-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "RobotoSlabRegular";
+  font-size: 32px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+}
+
+.item {
+  position: relative;
+  max-width: 300px;
+  margin: 20px auto 0;
+  @media (min-width: 768px) {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  @media (min-width: 992px) {
+    margin-top: 40px;
+  }
+}
+
+.item-number {
+  font-family: "RalewayThin";
+  font-size: 35px;
+}
+
+.item-text {
+  background-color: #fff;
+  height: 100px;
+  font-family: "OpenSansRegular";
+  font-weight: 300;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.item-bord {
+  height: 10px;
+  background-color: $yellow;
+}
+
+.section3-button {
+  border-radius: 4px;
+  background-color: $yellow;
+  font-family: "RobotoSlabRegular";
+  font-weight: bold;
+  border: 1px solid transparent;
+  font-size: 16px;
+  padding: 10px;
+  width: 60%;
+  position: absolute;
+  left: 20%;
+  bottom: -14%;
+  text-align: center;
+
+  &:hover {
+    background-color: #000;
+    border: 1px solid $yellow;
+    color: $yellow;
+    cursor: pointer;
+  }
+  @media (min-width: 768px) {
+    width: 80%;
+    left: 10%;
+  }
+}
