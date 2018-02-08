@@ -1,0 +1,355 @@
+.navbar-menu-mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-menu-mobile {
+    display: flex;
+    width: 100%;
+    z-index: 999;
+  }
+  .navbar-low {
+    display: flex;
+  }
+}
+/* HEADER */
+.navbar-menu ul {
+  display: flex;
+}
+.navbar-menu ul > li {
+  margin: 0 0.75em;
+}
+.btn-men {
+  color: black;
+  font-weight: 500;
+}
+.btn-men:hover,
+.btn-men:focus,
+.btn-men:active {
+  color: black;
+  border-bottom: 2px solid #ffc000;
+  text-decoration: none;
+}
+/* END_HEADER  */
+
+/* mobile menu */
+ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul:after {
+  display: block;
+  content: " ";
+  clear: both;
+  float: none;
+}
+ul.menu > li {
+  float: left;
+  position: relative;
+}
+ul.menu > li > a {
+  display: block;
+  padding: 10px 35px;
+  color: black;
+  background-color: #ffc000;
+  text-decoration: none;
+  border: 2px solid black;
+  font-family: "OpenSans", sans-serif;
+  font-weight: bold;
+}
+ul.menu > li > a:hover {
+  /* background-color: black; */
+}
+ul.submenu {
+  display: none;
+  position: absolute;
+  width: 120px;
+  background-color: white;
+  border: 2px solid black;
+}
+ul.submenu > li {
+  display: block;
+}
+ul.submenu > li > a {
+  display: block;
+  padding: 10px;
+  color: black;
+  background-color: #ffc000;
+  text-decoration: none;
+  font-family: "OpenSans", sans-serif;
+  font-weight: bold;
+}
+ul.submenu > li > a:hover {
+  text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+/* end mobile */
+
+/* ---------------- */
+.ourWorks {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+}
+.wrp-works {
+  display: flex;
+}
+.ourWork1,
+.ourWork2 {
+  font-size: 38px;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  font-weight: bold;
+}
+.ourWork1 {
+  background-color: black;
+  color: #fff;
+  z-index: 1;
+}
+.ourWork2 {
+  background-color: #ffc000;
+  color: #3b3b3b;
+  top: 40px;
+  right: 25px;
+}
+/* ---------------- */
+
+/* NAV*/
+.nav-menu-all {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.nav-menu-all ul {
+  display: flex;
+}
+.nav-menu-all li {
+  margin: 2em 1em;
+}
+.nav-menu-all li > a {
+  padding: 10px 16px;
+  color: #999999;
+  border: 1px solid #999999;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+.nav-menu-all li > a:hover,
+.nav-menu-all li > a:focus {
+  border-color: #ffc000;
+  color: #ffc000;
+}
+/*  END NAV */
+
+/* PORTFOLIO */
+.portfolio {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .portfolio {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.bgi1 {
+  background: url("../img/img1.png") center/cover;
+}
+.bgi2 {
+  background: url("../img/img2.png") center/cover;
+}
+.bgi3 {
+  background: url("../img/img3.png") center/cover;
+}
+.bgi4 {
+  background: url("../img/img4.png") center/cover;
+}
+.bgi5 {
+  background: url("../img/img5.png") center/cover;
+}
+.bgi6 {
+  background: url("../img/img6.png") center/cover;
+}
+.bgi7 {
+  background: url("../img/img7.png") center/cover;
+}
+.bgi8 {
+  background: url("../img/img8.png") center/cover;
+}
+.main-item {
+  width: 49%;
+  height: 100%;
+  margin: 1% 0;
+}
+
+.element-item {
+  display: block;
+  position: relative;
+  height: 33em;
+  width: 100%;
+  background-color: aliceblue;
+  transform-style: preserve-3d;
+  box-shadow: 1.5rem 2.5rem 5rem 0.7rem rgba(0, 0, 0, 0.13);
+  margin: 1% 0;
+}
+
+.element-item__bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.8s cubic-bezier(0.42, 0, 0, 1);
+  z-index: 0;
+  background-repeat: no-repeat;
+}
+.element-item__overlay {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.element-item__title {
+  opacity: 0;
+  font-size: 25px;
+  color: #3b3b3b;
+  margin-top: 15px;
+  margin-left: 15px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transition: all 1s ease;
+  font-style: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+}
+.element-item:hover .element-item__title {
+  opacity: 1;
+  margin: 0;
+  transition: all 1s ease;
+}
+.element-item:hover .element-item__overlay {
+  opacity: 1;
+}
+/* END PORTFOLIO */
+
+/* MORE */
+
+.more > a {
+  display: block;
+  font-size: 18px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 20px 50px;
+  margin: 55px auto;
+  font-weight: bold;
+  text-decoration: none;
+}
+.more > a:hover {
+  color: #ffc000;
+  border-color: #ffc000;
+}
+/* END MORE*/
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  padding: 30px 0;
+}
+.ftr_head {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .ftr_head,
+  .navbar-low,
+  .navbar-low > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-low ul > li {
+    margin: 1em;
+  }
+}
+.wt {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.wt:hover {
+  color: white;
+}
+.ftr_head > a {
+  color: white;
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  /* padding: 20px 50px; */
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+.ftr_head > a:hover {
+  background-color: #ffc000;
+  color: #000;
+}
+
+.brd {
+  width: 90%;
+  background-color: #fff;
+  height: 2px;
+  margin: 20px auto;
+}
+
+.ftr_other {
+  display: flex;
+}
+.loc {
+  display: flex;
+  width: 70%;
+  margin-right: 10%;
+  font-family: "Roboto Slab", serif;
+}
+@media (max-width: 992px) {
+  .loc {
+    flex-direction: column;
+  }
+}
+.street,
+.tlf,
+.date {
+  color: #fff;
+}
+.icon {
+  display: inline-block;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  color: black;
+  background-color: #ffc000;
+}
+.icon > a {
+  color: black;
+}
+.social {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
