@@ -1,0 +1,230 @@
+body,html{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+ul {
+	list-style: none;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*----------HEADER----------*/
+
+header{
+	padding: 1em 0;
+	font-size: 14px;
+}
+.search input{
+	border:0;
+	background-color: #fff;
+	font-family: OpenSans;
+}
+.search img{
+	margin-right:0.5em;
+}
+.search input:focus{
+	outline:none;
+}
+.account ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.account ul li{
+	margin-left: 3.25em;
+}
+.account ul li:first-child{
+	margin-left:0;
+}
+.account li a{
+	text-transform: uppercase;
+	color: #757575
+}
+.account li a:hover{
+	text-decoration-color: #757575;
+	color:#757575;
+}
+.iconMR{
+	margin-right: 0.5em;
+	position: relative;
+	bottom: 3px;
+}
+.logoStar{
+	position:absolute;
+	right:0;
+	top:0;
+	overflow:hidden;
+	height:122px;
+}
+
+/*----------END HEADER----------*/
+
+/*----------NAV----------*/
+
+nav{
+	font-family: OpenSans;
+	font-size: 14px;
+	background-color: #101944;
+	height: 50px
+}
+nav ul{
+	height: 100%;
+}
+nav ul li{
+	margin: 3em;
+}
+nav li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+nav ul li a:hover{
+	text-decoration-color: #fff;
+	color:#fff;
+}
+
+/*----------END NAV----------*/
+
+/*----------ARTICLE----------*/
+article{
+	margin-bottom: 3em;
+	padding-top: 3em;
+}
+.loginCreate{
+	text-transform: uppercase;
+	color: #757575;
+	font-family: OpenSans;
+	font-weight: 500;
+	color: #757575;
+}
+p.pHeader{
+	font-family: OpenSans;
+	font-size: 12px;
+	color:#101944;
+	margin: 9px 0;
+	font-weight: bold;
+}
+p.pHeaderText{
+	font-family: OpenSans;
+	font-size: 12px;
+	color: #757575;
+	margin-bottom: 3em;
+	width: 69%;
+}
+form.registred{
+	width: 69%;
+}
+p.input{
+	font-family: OpenSans;
+	font-size: 12px;
+	color: #757575;
+	margin: 0;
+}
+input{
+	border:1px solid #757575;
+	border-radius: 3px;
+	height: 35px;
+	width: 370px;
+	background-color: #f5f5f5;
+	font-family: OpenSans;
+	font-size: 12px;
+}
+.signIn{
+	margin:1em 0;
+}
+input.button:hover{
+	cursor: pointer;
+}
+input.button,.singInButton{
+	width: 111px;
+	background-color: #FB9728;
+	color: #fff;
+	border:0;
+}
+a.fgPass{
+	font-family: OpenSans;
+	font-size: 12px;
+	color: #757575;
+}
+.or{
+	font-weight: bold;
+	color:#101944;
+}
+.or:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 96%;
+	height: 1px;
+	background: #757575;
+	border: solid #FFF;
+	border-width: 0 10px;
+	margin-right: -100%;
+}
+.margTextConnect{
+	margin: 25px 0;
+}
+input.FACEBOOK{
+	background-color: #3B5998;
+}
+input.GOOGLE{
+	background-color: #F44336;
+}
+/*----------END ARTICLE----------*/
+
+/*----------FOOTER----------*/
+footer{
+	margin-top: 2em;
+	background: url("../img/logoFooterBG.png") no-repeat;
+	background-position: right;
+	background-position-y: -79px;
+}
+
+footer ul li{
+	margin-left: 7em;
+}
+footer ul li:first-child{
+	margin-left: 0;
+}
+footer li p.textFooter{
+	font-family: OpenSans;
+	font-size: 12px;
+	font-weight: 600;
+	color: #101944;
+	text-transform: uppercase;
+}
+footer li p.textFooterOther{
+	font-family: OpenSans;
+	font-size: 12px;
+	color: #757575;
+	margin-top:1em;
+}
+/*----------END FOOTER----------*/
+
+/*----------COPYRIGHT----------*/
+.copyright{
+	background-color:#F5F5F5;
+	position: relative;
+	bottom: 19px;
+	min-height: 40px;
+	margin-bottom: -1em;
+}
+.copyrightText1 span{
+	color: #007bff;
+	margin: 0;
+}
+.copyrightText1,.copyrightText2{
+	margin: 0;
+}
+/*----------END COPYRIGHT----------*/
+
+.dropdown-menu{
+	color:black;
+}

@@ -1,0 +1,141 @@
+/*----------HEADER----------*/
+@media(max-width: 991px){
+	.mediaHead{
+		flex-direction: column;
+	}
+	.logoStar{
+		height:180px;
+	}
+}
+@media (max-width: 767px){
+	.search{
+		margin:1em 0;
+	}
+}
+@media(max-width: 446px){
+	.search img{
+		margin-right:0;
+	}
+	.search input{
+		width: 85%;
+	}
+	.account ul li {
+		margin-left: 1.25em;
+	}
+}
+
+
+/*----------END HEADER----------*/
+
+/*----------NAV----------*/
+@media (max-width: 767px){
+	nav ul li{
+		margin: 1em;
+	}
+}
+@media (max-width: 767px){
+	nav{
+		height: 175px;
+	}
+	nav ul{
+		flex-direction: column;
+	}
+	nav ul li{
+		margin: 0.5em;
+	}
+}
+@media (max-width: 425px){
+	/*nav ul li {
+		margin: 5px;
+		}*/
+		
+	}
+	/*----------END NAV----------*/
+
+	/*----------ARTICLE----------*/
+
+	@media(max-width: 1199px){
+		form.registred {
+			width: 83%;
+		}
+		.or:after {
+			width: 95%;
+		}
+	}
+	@media(max-width: 991px){
+		form.registred {
+			width: 100%;
+		}
+		p.pHeaderText {
+			width: 100%;
+		}
+		.or:after {
+			width: 96%;
+		}
+	}
+	@media(max-width: 767px){
+		.mtMedia{
+			margin-top: 3em;
+		}
+	}
+	@media(max-width: 410px){
+		#userPassword,#emailAddress{
+			width: 255px;
+		}
+	}
+
+	@media (max-width: 575.98px) { 
+		input.button, .singInButton {
+			width: 46%;
+		}
+		.mtMedia{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+		}
+	}
+	/*----------END ARTICLE----------*/
+
+	/*----------FOOTER----------*/
+	@media(max-width: 991px){
+		footer ul li {
+			margin-left: 50%;
+		}
+		footer ul li:first-child {
+			margin-left: 50%;
+		}
+	}
+	@media(max-width: 767px){
+		footer ul li {
+			margin-left: 50%;
+		}
+	}
+
+	/*----------END FOOTER----------*/
+
+	/*----------COPYRIGHT----------*/
+	@media(max-width: 991px){
+		.mediaFooter{
+			flex-direction: column;
+		}
+		footer{
+			margin-bottom: 2em;
+			background-position-y: 111px
+		}
+		footer ul {
+			flex-direction: column;
+		}
+		@media(max-width: 767px){
+			footer ul li{
+				margin-left: 0;
+			}
+			footer ul li:first-child{
+				margin-left: 0;
+			}
+			footer ul{
+				margin-left: 35%;
+			}
+		}
+	}
+/*----------END COPYRIGHT----------*/
